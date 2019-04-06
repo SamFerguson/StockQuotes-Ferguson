@@ -8,6 +8,9 @@
     <string name="year_range">Yearly Range</string>
     <string name="blank"></string>
     <string name="enter">Enter Stock Symbol</string>
+    <string name="prev">Previous entries</string>
+    <string name="close">my bad</string>
+    <string name="error">Hey buddy, that\'s not a real stock</string>
 
 
 

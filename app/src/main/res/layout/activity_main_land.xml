@@ -176,10 +176,10 @@
 
     <ListView
         android:id="@+id/past_stocks"
-        android:layout_width="395dp"
-        android:layout_height="334dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="384dp"
+        android:layout_width="267dp"
+        android:layout_height="321dp"
+        android:layout_marginStart="424dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -187,8 +187,8 @@
         android:id="@+id/previous"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="344dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="36dp"
         android:text="@string/prev"
         android:textSize="@dimen/prev_size"
         app:layout_constraintStart_toStartOf="parent"
