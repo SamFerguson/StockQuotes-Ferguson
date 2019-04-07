@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="prev_size">30sp</dimen>
+    <dimen name="symbol_tv">8dp</dimen>
+    <dimen name="symbol_mt">125dp</dimen>
+    <dimen name="name_ms">8dp</dimen>
+    <dimen name="name_mt">8dp</dimen>
+    <dimen name="ltt_ms">8dp</dimen>
+    <dimen name="ltt_mt">8dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="esms">8dp</dimen>
+    <dimen name="esmt">48dp</dimen>
+    <dimen name="glcb">48dp</dimen>
+    <dimen name="i_land_w">111dp</dimen>
+    <dimen name="input_land_h">52dp</dimen>
+    <dimen name="input_land_ms">236dp</dimen>
+    <dimen name="input_land_mt">36dp</dimen>
+    <dimen name="result_mt">124dp</dimen>
+    <dimen name="lvwland">267dp</dimen>
+    <dimen name="lvhland">321dp</dimen>
+    <dimen name="lvmsland">424dp</dimen>
+    <dimen name="lvmtland">80dp</dimen>
+    <dimen name="prevlandms">400dp</dimen>
+    <dimen name="prevlandmt">36dp</dimen>
+    <dimen name="gl2cb">219dp</dimen>
+    <dimen name="tvwport">74dp</dimen>
+    <dimen name="tvmsport">125dp</dimen>
+    <dimen name="entertextsize">24sp</dimen>
+    <dimen name="lvwport">395dp</dimen>
+    <dimen name="lvhport">334dp</dimen>
+    <dimen name="lvmtport">384dp</dimen>
+    <dimen name="prevmsport">16dp</dimen>
+    <dimen name="prevmtport">344dp</dimen>
+
+
+
+
+
 </resources>

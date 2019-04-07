@@ -9,23 +9,23 @@
 
     <TextView
         android:id="@+id/symbol"
-        android:layout_width="74dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="125dp"
+        android:layout_marginStart="@dimen/symbol_tv"
+        android:layout_marginTop="16dp"
         android:text="@string/symb"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Enter_stock" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/name_ms"
+        android:layout_marginTop="@dimen/name_mt"
         android:text="@string/name"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/symbol" />
 
@@ -34,27 +34,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="48dp" />
+        app:layout_constraintGuide_begin="@dimen/glcb" />
 
     <TextView
         android:id="@+id/last_trade_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="@dimen/ltt_ms"
         android:layout_marginTop="8dp"
         android:text="@string/last_p"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/c_result" />
 
     <TextView
         android:id="@+id/last_trade_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/ltt_ms"
+        android:layout_marginTop="@dimen/ltt_mt"
         android:text="@string/last_t"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/last_trade_time" />
 
@@ -62,8 +62,8 @@
         android:id="@+id/Enter_stock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="@dimen/esms"
+        android:layout_marginTop="@dimen/esmt"
         android:text="@string/enter"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -71,10 +71,10 @@
 
     <EditText
         android:id="@+id/Input"
-        android:layout_width="111dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="236dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="@dimen/i_land_w"
+        android:layout_height="@dimen/input_land_h"
+        android:layout_marginStart="@dimen/input_land_ms"
+        android:layout_marginTop="@dimen/input_land_mt"
         android:inputType="textCapCharacters"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent" />
@@ -83,10 +83,10 @@
         android:id="@+id/change"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/ltt_ms"
+        android:layout_marginTop="@dimen/ltt_mt"
         android:text="@string/change"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/last_trade_price" />
 
@@ -94,10 +94,10 @@
         android:id="@+id/yearly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/ltt_ms"
+        android:layout_marginTop="@dimen/ltt_mt"
         android:text="@string/year_range"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/change" />
 
@@ -105,21 +105,24 @@
         android:id="@+id/s_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginStart="@dimen/ltt_ms"
+        android:layout_marginTop="16dp"
         android:text="@string/blank"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Enter_stock" />
 
     <TextView
         android:id="@+id/c_result"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/ltt_ms"
+        android:layout_marginTop="@dimen/ltt_mt"
+        android:layout_marginEnd="8dp"
         android:text="@string/blank"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toStartOf="@+id/past_stocks"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/s_result" />
 
@@ -127,10 +130,10 @@
         android:id="@+id/lp_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/ltt_ms"
+        android:layout_marginTop="@dimen/ltt_mt"
         android:text="@string/blank"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/c_result" />
 
@@ -138,10 +141,10 @@
         android:id="@+id/lt_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/ltt_ms"
+        android:layout_marginTop="@dimen/ltt_mt"
         android:text="@string/blank"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/lp_result" />
 
@@ -149,10 +152,10 @@
         android:id="@+id/ch_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/ltt_ms"
+        android:layout_marginTop="@dimen/ltt_mt"
         android:text="@string/blank"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/lt_result" />
 
@@ -160,10 +163,10 @@
         android:id="@+id/yr_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/ltt_ms"
+        android:layout_marginTop="@dimen/ltt_mt"
         android:text="@string/blank"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/ch_result" />
 
@@ -172,14 +175,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="219dp" />
+        app:layout_constraintGuide_begin="@dimen/gl2cb" />
 
     <ListView
         android:id="@+id/past_stocks"
-        android:layout_width="267dp"
-        android:layout_height="321dp"
-        android:layout_marginStart="424dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="@dimen/lvwland"
+        android:layout_height="@dimen/lvhland"
+        android:layout_marginStart="@dimen/lvmsland"
+        android:layout_marginTop="@dimen/lvmtland"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -187,8 +190,8 @@
         android:id="@+id/previous"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="400dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="@dimen/prevlandms"
+        android:layout_marginTop="@dimen/prevlandmt"
         android:text="@string/prev"
         android:textSize="@dimen/prev_size"
         app:layout_constraintStart_toStartOf="parent"

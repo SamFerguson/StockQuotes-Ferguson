@@ -109,13 +109,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onKey(View v, int keyCode, KeyEvent event) {
              if(event.getAction() == KeyEvent.ACTION_UP && keyCode == 66) {
-                 System.out.println("im in the onkey");
                  String stockToSend = input.getText().toString();
                  StockAsync mStockAsync = new StockAsync(stockToSend, (View)findViewById(R.id.activity), MainActivity.this);
                  System.out.println(symbol.getText().toString());
                  mStockAsync.execute();
                  //add stock to the array
-                 previousStocks.add(0,stockToSend);
+                 previousStocks.add(0,stockToSend.toUpperCase());
                  if(previousStocks.size()  > 4){
                      previousStocks.remove(4);
                  }
